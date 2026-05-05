@@ -26,7 +26,7 @@ Aplikasi ini dibuat untuk mempermudah pengelolaan kategori buku dalam sistem per
    -Klik **Start**
 6. Jalankan Aplikasi di Browser `localhost/uts_60324087`
 ## Struktur folder
-<img width="351" height="214" alt="image" src="https://github.com/user-attachments/assets/46b19ddf-175a-4980-b796-983207482241" />
+<img width="353" height="274" alt="image" src="https://github.com/user-attachments/assets/65b37c11-8f61-4093-a5c7-c5b8cbb0863d" />
 
 ## Link Repository
 https://github.com/humamsukma2-cell/uts-pemrograman-web-2-60324087.git
