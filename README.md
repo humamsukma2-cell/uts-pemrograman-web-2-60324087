@@ -23,7 +23,7 @@ Aplikasi ini dibuat untuk mempermudah pengelolaan kategori buku dalam sistem per
    - pilih file `uts_perpustakaan_60324087.sql`
    - klik "**GO**"
 5. Jalankan Apache dan Mysql di XAMPP
-   -Klik **Start**
+   - Klik **Start**
 6. Jalankan Aplikasi di Browser `localhost/uts_60324087`
 ## Struktur folder
 <img width="353" height="274" alt="image" src="https://github.com/user-attachments/assets/65b37c11-8f61-4093-a5c7-c5b8cbb0863d" />
