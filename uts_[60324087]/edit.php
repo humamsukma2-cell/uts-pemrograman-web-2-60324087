@@ -109,8 +109,7 @@
                     </div>
 
                     <div class="card-body">
-
-                        <!--error-->
+                        
                         <?php if (count($errors) > 0): ?>
                             <div class="alert alert-danger">
                                 <ul class="mb-0">
@@ -123,27 +122,23 @@
 
                         <form method="POST">
 
-                            <!--kode-->
                             <div class="mb-3">
                                 <label>Kode Kategori *</label> 
                                 <input type="text" name="kode" class="form-control"
                                     value="<?php echo htmlspecialchars($kode); ?>">
                             </div>
 
-                            <!--nama-->
                             <div class="mb-3">
                                 <label>Nama Kategori *</label>
                                 <input type="text" name="nama" class="form-control"
                                     value="<?php echo htmlspecialchars($nama); ?>">
                             </div>
 
-                            <!--deskripsi-->
                              <div class="mb-3">
                                 <label>Deskripsi</label>
                                 <textarea name="deskripsi" class="form-control"><?php echo htmlspecialchars($deskripsi); ?></textarea>
                             </div>
 
-                            <!--status-->
                             <div class="mb-3">
                                 <label>Status</label><br>
                                 <input type="radio" name="status" value="Aktif"
