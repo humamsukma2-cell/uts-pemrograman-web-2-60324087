@@ -13,7 +13,7 @@
 
     $errors = [];
 
-    // mengambil ID dari query string
+    // TODO: Ambil ID dari GET
     if (!isset($_GET['id']) || empty($_GET['id'])) {
         header("Location: index.php?error=ID tidak valid");
         exit();
@@ -21,7 +21,7 @@
 
     $id = (int)$_GET['id'];
 
-    // mengambil data kategori berdasarkan ID
+    // TODO: Retrieve data berdasarkan ID
     $stmt = $conn->prepare("SELECT * FROM kategori WHERE id_kategori = ?");
     $stmt->bind_param("i", $id);
     $stmt->execute();
@@ -39,9 +39,9 @@
     $deskripsi = $data['deskripsi'];
     $status = $data['status'];
 
-    // proses update data
+    // TODO: Jika POST, proses update
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+        
         $kode = htmlspecialchars(trim($_POST['kode']));
         $nama = htmlspecialchars(trim($_POST['nama']));
         $deskripsi = htmlspecialchars(trim($_POST['deskripsi']));
