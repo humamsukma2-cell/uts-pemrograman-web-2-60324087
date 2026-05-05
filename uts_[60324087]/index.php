@@ -56,12 +56,10 @@
                         </tr>
                     </thead>
                     <tbody>
-
                         <?php
                         $no = 1;
                         while ($row = $result->fetch_assoc()):
                         ?>
-
                             <tr>
                                 <td><?php echo $no++; ?></td>
                                 <td><?php echo htmlspecialchars($row['kode_kategori']); ?></td>
@@ -75,22 +73,16 @@
                                         <span class="badge bg-danger">Nonaktif</span>
                                     <?php endif; ?>
                                 </td>
-
                                 <td>
                                     <a href="edit.php?id=<?php echo $row['id_kategori']; ?>"
-                                        class="btn btn-warning btn-sm">
-                                        Edit
+                                        class="btn btn-warning btn-sm"> Edit
                                     </a>
-
                                     <button class="btn btn-danger btn-sm"
-                                        onclick="confirmDelete(<?php echo $row['id_kategori']; ?>)">
-                                        Hapus
+                                        onclick="confirmDelete(<?php echo $row['id_kategori']; ?>)"> Hapus
                                     </button>
                                 </td>
                             </tr>
-
                         <?php endwhile; ?>
-
                     </tbody>
                 </table>
             </div>
