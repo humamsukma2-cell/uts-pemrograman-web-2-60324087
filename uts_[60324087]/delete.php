@@ -1,7 +1,7 @@
 <?php
 require_once 'config/database.php';
 
-// memvalidasi ID
+// TODO: Validasi ID dari GET
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     header("Location: index.php?error=ID tidak valid");
     exit();
@@ -9,7 +9,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
 $id = (int)$_GET['id'];
 
-// mengecek apakah data dengan ID tersebut ada
+// TODO: Cek keberadaan data
 $stmt = $conn->prepare("SELECT id_kategori FROM kategori WHERE id_kategori = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
@@ -20,7 +20,8 @@ if ($result->num_rows == 0) {
     exit();
 }
 
-// menghapus data
+// TODO: Delete data
+// TODO: Redirect dengan pesan
 $stmt = $conn->prepare("DELETE FROM kategori WHERE id_kategori = ?");
 $stmt->bind_param("i", $id);
 
